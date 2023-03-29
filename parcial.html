@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.js"></script>
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+        <header>
+            <div class="presentacion">
+           <h2> Parcial gestion de redes</h2>
+           <h4>katalina castelblanco salazar</h4>
+           <h4> Materia: Redes Inalambricas </h4>
+           <h4> Docente: Marlon Patiño</h4>
+        </div>
+        <div class="problema">
+           <pre>
+            
+                El sistema Starlink secundario usa satélites enórbitaLEO de 1.35Mm(1350 km) dealtura a
+                una frecuencia fc=14.5 GHz (14500 MHz),
+               un Bw=150 MHz.El sistema transmisor opera con una potencia de 2.5 W y una antena de 27dBi.
+               El sistema receptor tiene un umbral Th=-75 dBm Y una antena de 17 dBi.
+                 
+                 1.Presente un gráfico del espectro de la señal a la salida de la antena del Tx.
+                 2.Determine si hay enlace para la orbita Starlinkcon MD = 20 dB.
+                 3.Cual es la amplificación faltante si la órbitaes GEO(36Mm) MD = 20 dB.
+
+            </pre>
+        </div>
+        </header>
+    <div class="contenedor">
+        
+
+
+
+            <div class="formulario">
+                <form action="" id="formulario" method="post" class="" form>
+                    <h1 class="title"> DATOS</h1>
+
+                    <div class="inputContainer">
+                        <input type="number" class="input" name="fc">
+                        <label for="" class="label">Fc(MHz)</label>
+                    </div>
+                    <div class="inputContainer">
+                        <input type="number " placeholder=" Distancias(km) " name="Distancias" class="input">
+                        <label for="" class="label">Distancias(km)</label>
+
+                    </div>
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder=" BW (MHz)" name="BW">
+                        <label for="" class="label">BW (MHz)</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder=" potencia (w)" name="Potencia" step="0.1">
+                        <label for="" class="label">potencia (w)</label>
+
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder=" Tx antena (dBi)" name="Tx">
+                        <label for="" class="label">Tx antena (dBi)</label>
+
+                    </div>
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder=" Rx antena (dBi)" name="Rx">
+                        <label for="" class="label">Rx antena (dBi)</label>
+
+                    </div>
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder=" MD (dB)" name="MD">
+                        <label for="" class="label"> MD (dB)</label>
+
+                    </div>
+                    <div class="inputContainer">
+                        <input type="number" class="input" placeholder="Th (dB)" name="Th">
+                        <label for="" class="label">Th (dB)</label>
+
+                    </div>
+                    <button type="submit" value="calcular" class="submitBtn"> calcular
+                    </button>
+
+                    <!---->
+
+
+                </form>
+            </div>
+
+
+
+            <div class="div_graficp">
+                <canvas id="grafico">
+
+
+                </canvas>
+
+            </div>
+       
+     </div>
+
+   <footer>
+    <div id="texto" class="texto">
+
+
+    </div>
+        <div id="texto2" class="texto2">
+           
+
+
+
+        <script src="parcial.js"></script> 
+    </footer>|
+        </div>
+    </div>
+</body>
+
+</html>
